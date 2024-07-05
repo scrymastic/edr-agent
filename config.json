@@ -1,0 +1,21 @@
+{
+  "uri": "ws://192.168.63.137:8000/ws/agent/",
+  "event_processor": {
+    "source": [
+      {
+        "path": "Microsoft-Windows-Sysmon/Operational",
+        "query": "*"
+      },
+      {
+        "path": "Microsoft-Windows-PowerShell/Operational",
+        "query": "*[System[(EventID=4104)]]"
+      }
+    ]
+  },
+  "command_processor": {
+    "reverse_shell": {
+      "ip": "192.168.63.137",
+      "port": 4444
+    }
+  }
+}
