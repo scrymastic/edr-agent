@@ -63,3 +63,9 @@ Example:
 
 Once installed and configured, the EDR Agent operates autonomously, monitoring specified events and communicating with the EDR server. Interaction with the agent is primarily through the EDR server's interface for command execution and event analysis.
 
+![alt text](imgs/image-1.png)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+

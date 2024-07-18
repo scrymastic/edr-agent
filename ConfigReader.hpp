@@ -19,7 +19,8 @@ public:
 private:
     std::filesystem::path configFilePath;
     nlohmann::json jsonObject;
-    static nlohmann::json parseJsonFile(const std::filesystem::path& configFilePath);
+    static nlohmann::json parseJsonFile(
+        const std::filesystem::path& configFilePath);
 };
 
 #endif // CONFIGREADER_HPP

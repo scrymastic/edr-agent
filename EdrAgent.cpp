@@ -13,7 +13,8 @@
 #include <conio.h>
 
 
-DWORD WINAPI SubscriptionCallback(EVT_SUBSCRIBE_NOTIFY_ACTION action, PVOID pContext, EVT_HANDLE hEvent);
+DWORD WINAPI SubscriptionCallback(EVT_SUBSCRIBE_NOTIFY_ACTION action, 
+                                PVOID pContext, EVT_HANDLE hEvent);
 DWORD ProcessEvent(EVT_HANDLE hEvent);
 DWORD EventToEventXml(EVT_HANDLE hEvent, std::string& eventXml);
 std::string EventXmlToEventJson(const std::string& xml);
@@ -84,6 +85,7 @@ cleanup:
 
     return status;
 }
+
 
 DWORD WINAPI SubscriptionCallback(EVT_SUBSCRIBE_NOTIFY_ACTION action, PVOID pContext, EVT_HANDLE hEvent)
 {
