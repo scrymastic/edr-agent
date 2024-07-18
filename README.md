@@ -1,9 +1,12 @@
 
 # EDR Agent
 
-## Overview
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Windows-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 
-The EDR (Endpoint Detection and Response) Agent is a comprehensive security solution designed to be installed on client computers. Its primary function is to monitor system events and send relevant information to the EDR server for further analysis and response. Additionally, the agent is capable of receiving and executing commands from the EDR server, enabling remote incident response and management.
+The EDR (Endpoint Detection and Response) Agent is a comprehensive (simple for now) security solution designed to be installed on client computers. Its primary function is to monitor system events and send relevant information to the EDR server for further analysis and response. Additionally, the agent is capable of receiving and executing commands from the EDR server, enabling remote incident response and management.
 
 ## Features
 
@@ -13,7 +16,7 @@ The EDR (Endpoint Detection and Response) Agent is a comprehensive security solu
 
 - **Configurable Event Sources:** Allows for customization of monitored event sources and queries through a simple JSON configuration, enabling targeted monitoring tailored to specific security needs.
 
-- **Secure Communication:** Utilizes WebSocket for secure and efficient communication with the EDR server, ensuring that sensitive data is transmitted securely.
+- **Secure Communication:** Utilizes WebSocket for secure and efficient communication with the EDR server, ensuring that sensitive data is transmitted securely. (not implemented yet)
 
 ## Installation
 
@@ -64,6 +67,10 @@ Example:
 Once installed and configured, the EDR Agent operates autonomously, monitoring specified events and communicating with the EDR server. Interaction with the agent is primarily through the EDR server's interface for command execution and event analysis.
 
 ![alt text](imgs/image-1.png)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue if you encounter any problems or have suggestions for improvements.
 
 ## License
 
